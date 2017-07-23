@@ -1,0 +1,166 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>个人博客首页</title>
+    <link type="text/css" rel="stylesheet" href="blog.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>  
+    <div class="bgup"></div>
+		<div class="blogheader"><img src="images/bloglogo.gif" />张三的博客</div>
+		<div class="myblogbanner"><a href="#">首&nbsp;页</a>&nbsp;&nbsp;&nbsp; <a href="blog">日&nbsp;志</a> &nbsp;&nbsp;&nbsp;相&nbsp;册&nbsp;&nbsp;&nbsp; 音&nbsp;乐&nbsp;&nbsp;&nbsp; 好&nbsp;友 &nbsp;&nbsp;&nbsp;<a href="#">个人档</a></div>
+		<div id="myblogbody">
+			<div class="myblogright"><!--右边栏-->
+			    <div class="mybox">		    
+			        <div class="myblogtitle" onclick="blogindex(1)">
+			            <img style="position:absolute;top:-7px;left:8px" alt="" src="images/myinfo.gif" />
+			            <img alt="" src="images/blogright.gif" style="float:right" />
+			            <img alt="" src="images/blogleft.gif" style="position:absolute;left:0px;top:0px" />
+			            心情预报
+			        </div>			        
+			        <div id="index1">
+			        <div class="myblogcon">
+			            <ol>
+			                <li>郁闷ing,即将发火</li>
+			                <li>环境不好,要换</li>
+			            </ol>
+			        </div>
+			    </div>
+			    </div>
+			    <div class="mybox">
+			        <div class="myblogtitle" onclick="blogindex(2)">
+			            <img style="position:absolute;top:-2px;left:8px" alt="" src="images/mymusic.gif" />
+			            <img alt="" src="images/blogright.gif" style="float:right" />
+			            <img alt="" src="images/blogleft.gif" style="position:absolute;left:0px;top:0px" />
+			            我的音乐盒
+			        </div>
+			        <div id="index2">
+			        <div class="myblogcon">歌曲列表</div>
+			        </div>
+			    </div>				    
+			</div>
+			<div class="myblogleft"><!--左边栏-->
+				<div class="mybox">
+			        <div class="myblogtitle" onclick="blogindex(3)">
+			            <img style="position:absolute;top:-7px;left:8px" alt="" src="images/myinfo.gif" />
+			            <img alt="" src="images/blogright.gif" style="float:right" />
+			            <img alt="" src="images/blogleft.gif" style="position:absolute;left:0px;top:0px" />
+			            个人信息
+			        </div>
+			        <div id="index3">
+			        <div class="myblogcon">
+			            <div class="myphoto"></div>
+			        个人信息显示</div>
+			        </div>
+			    </div>
+			    <div class="mybox">
+			        <div class="myblogtitle" onclick="blogindex(4)">
+			            <img style="position:absolute;top:-4px;left:8px" alt="" src="images/myfriends.gif" />
+			            <img alt="" src="images/blogright.gif" style="float:right" />
+			            <img alt="" src="images/blogleft.gif" style="position:absolute;left:0px;top:0px" />
+			            我的好友
+			        </div>
+			        <div id="index4">
+			        <div class="myblogcon">
+			            <a href="http://www.luogee.com">络革</a>
+			            <br /><a href="http://www.163.com">网易</a>
+			            <br /><a href="http://www.bning.com">碧宁</a>
+			            <br /><a href="http://www.baidu.com">百度</a>
+			        </div>
+			        </div>
+			    </div>
+			     <div class="mybox">
+			        <div class="myblogtitle" onclick="blogindex(5)">
+			            <img style="position:absolute;top:-7px;left:8px" alt="" src="images/myinfo.gif" />
+			            <img alt="" src="images/blogright.gif" style="float:right" />
+			            <img alt="" src="images/blogleft.gif" style="position:absolute;left:0px;top:0px" />
+			            最近访客
+			        </div>
+			        <div id="index5">
+			        <div class="myblogcon"><span class="mysmallphoto"><img alt="1" src="images/bloger1.jpg" /></span> 发信息 加为好友 <br />张三 2007.12.08 12:36
+			        </div>
+			        </div>
+			    </div>
+			    <div class="mybox">
+			        <div class="myblogtitle" onclick="blogindex(6)">
+			            <img style="position:absolute;top:-2px;left:8px" alt="" src="images/myleave.gif" />
+			            <img alt="" src="images/blogright.gif" style="float:right" />
+			            <img alt="" src="images/blogleft.gif" style="position:absolute;left:0px;top:0px" />
+			            最新留言
+			        </div>
+			        <div id="index6">
+			        <div class="myblogcon">			         
+			           &nbsp;说:
+			           
+			         </div>			          
+			        </div>
+	          </div>
+	      </div>
+			<div class="myblogcenter"><!--中间栏-->
+				<div class="mybox">
+			        <div class="myblogtitle" onclick="blogindex(7)">
+			            <img style="position:absolute;top:-10px;left:8px" alt="" src="images/myblog.gif" />
+			            <img alt="" src="images/blogright.gif" style="float:right" />
+			            <img alt="" src="images/blogleft.gif" style="position:absolute;left:0px;top:0px" />
+			            我的日志
+			        </div>
+			        <div id="index7">
+			        <div class="myblogcon">
+			       
+                        <div class="logtitle">
+                       </div>
+                        <div class="floatright">发表于:|类别: |评论:|浏览:
+                        </div><br />                 
+			        </div>
+			        </div>
+			    </div>			    
+			     <div class="mybox">
+			        <div class="myblogtitle" onclick="blogindex(8)">
+			            <img style="position:absolute;top:-7px;left:8px" alt="" src="images/myinfo.gif" />
+			            <img alt="" src="images/blogright.gif" style="float:right" />
+			            <img alt="" src="images/blogleft.gif" style="position:absolute;left:0px;top:0px" />
+			            我的相册
+			        </div>
+			        <div id="index8">
+			            <div class="myblogcon">相册显示</div>
+			        </div>
+			    </div>
+			    <div class="mybox">
+			        <div class="myblogtitle" onclick="blogindex(9)">
+			            <img style="position:absolute;top:-7px;left:8px" alt="" src="images/myinfo.gif" />
+			            <img alt="" src="images/blogright.gif" style="float:right" />
+			            <img alt="" src="images/blogleft.gif" style="position:absolute;left:0px;top:0px" />
+			            最近评论
+			        </div>
+			        <div id="index9">
+			        <div class="myblogcon">
+			        我的评论
+			        </div>
+			        </div>
+			    </div>
+			</div>			
+		</div>
+		</div>
+<div class="footer">         
+		<div class="aboutus">
+			<ul>
+				<li><a href="../aboutus.html">关于我们</a></li>
+				<li><a href="../reg.aspx">注册会员</a></li>
+				<li><a href="../pay/index.aspx">在线充值</a></li>
+				<li><a href="../help/index.aspx">游戏客服</a></li>
+				<li><a href="../map.html">网站地图</a></li>
+				<li><a href="../law.html">法律声明</a></li>				
+				<li><a href="../zhaopin.html">招贤纳才</a></li>
+				<li><a href="../cooperate.html">合作伙伴</a></li>				
+				<li><a href="../connectus.html">联系我们</a></li>			
+			</ul>		   
+		</div>
+		<p><br />
+		实例作品</p>
+		<p>版权所有</p>
+</div>	
+</body>
+</html>
+
