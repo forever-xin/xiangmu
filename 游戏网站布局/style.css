@@ -1,0 +1,124 @@
+/* CSS Document */
+body
+{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	background:url(images/bg.gif);
+}
+.box
+{
+	width:955px;
+	margin:auto;	
+}
+#left
+{
+	width:300px;	
+	height:565px;	
+	float:left;
+	background:url(images/line1.gif);	
+}
+#left img
+{
+	border:0;
+	margin-left:7px;
+}
+#right
+{
+	width:655px;
+	float:left;	
+	background:#ffffff;	
+}
+#floatleft
+{
+	position:absolute;
+	width:53px;
+	height:31px;
+	top:-13px;
+	left:-61px;
+	background:url(images/float1.gif) no-repeat;
+}
+#floatright
+{
+	position:absolute;
+	width:53px;
+	height:31px;
+	top:-13px;
+	left:216px;
+	background:url(images/float2.gif) no-repeat;
+}
+#rightbox
+{
+	margin:12px 0px 12px 12px; 
+	border:1px solid #42605e;
+	width:551px;
+	height:240px;
+	position:relative;
+	padding:40px;
+	font-family:"隶书";
+	font-size:15px;	
+	color:#42605e;
+}
+#cornortr
+{
+	background:url(images/t_r.gif) no-repeat;
+	width:56px;
+	height:56px;
+	position:absolute;
+	right:-5px;
+	top:1px;
+}
+#cornortl
+{
+	background:url(images/t_l.gif) no-repeat;
+	width:56px;
+	height:56px;
+	position:absolute;
+	left:-4px;
+	top:1px;
+}
+#cornortbl
+{
+	background:url(images/b_l.gif) no-repeat;
+	width:56px;
+	height:56px;
+	position:absolute;
+	left:-4px;
+	bottom:-4px;
+}
+#cornorbr
+{
+	background:url(images/b_r.gif) no-repeat;
+	width:56px;
+	height:56px;
+	position:absolute;
+	right:-5px;
+	bottom:-3px;
+}
+
+#rightup
+{
+	width:620px;
+	margin:12px;
+	padding:20px 0px 0px 10px;
+	border:1px solid #42605e;
+	background:url(images/p.gif) repeat-x;
+	position:relative;
+	font-family:"隶书";
+	font-size:14px;
+}
+
+/*bottom*/
+#bottom
+{
+	background:url(images/xia.gif);	
+	text-align:center;	
+	height:62px;	
+}
+#b
+{
+	height:24px;
+	margin:0;	
+	clear:both;
+	background:url(images/b.gif) repeat-x;	
+}

@@ -1,0 +1,161 @@
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family:"Times New Roman";
+	font-size:12px;
+	background:url(images/bg3.jpg);
+	}    
+    #header
+    {
+        width:776px;
+        margin:auto;
+        position:relative;
+        height:15%;
+        background:#ffffff;
+        border-left:1px solid #ffffff;
+        border-right:1px solid #ffffff;   
+    }
+    img
+    {
+	border:0;
+    }
+    #logo
+    {
+        margin-top:10px;
+        height:85%;  	
+    }
+    #banner
+    {        
+        width:100%;  
+        padding:2px 0px;            
+        position:absolute;        
+        bottom:0px;       
+        text-align:right;
+        color:#fff;
+        background:#666;
+        border-bottom:1px solid #ffffff;
+        border-top:1px solid #ffffff;     
+    }
+	.showright
+    {
+        margin:10px 10px 0px 0px;
+        float:right;
+    }
+#content
+    {
+        width:778px;
+        margin:auto;
+        height:70%;        
+    }
+    #ender
+    {
+        width:776px;
+        margin:auto;        
+        height:14%;
+        border:1px solid #ffffff;        
+    }
+    #ender p
+    {
+        margin:2px 0px 0px 10px;
+        color:#666666;
+    }
+    #left
+    {
+        width:175px;
+        height:100%;
+        float:left;
+        border-left:1px solid #ffffff;
+        border-right:1px solid #ffffff;
+        background:#e6e6e6;
+    }
+    #right
+    {
+        width:600px;
+        height:100%;
+        float:right;
+        background:#cccccc;
+        border-right:1px solid #ffffff;
+    }
+    #rightbanner
+    {
+        width:120px;
+        float:left;
+    }
+    #rightbox
+    {
+        width:480px;
+        height:100%;
+        float:right;
+	padding:10px;
+        background:#cfcfcf;
+    }
+    
+    .enderbox1
+    {
+        width:175px;
+        height:100%;
+        float:left;  
+        background:url(images/bg12.jpg);             
+        border-right:1px solid #ffffff;      
+    }
+    .enderbox2
+    {
+        width:600px;
+        height:57%;
+        float:right;
+        background:#dadada;             
+    }
+    .enderbox3
+    {
+        width:600px;
+        height:42%;
+        float:right;      
+        background:#acacac;
+        border-top:1px solid #ffffff;            
+    }
+#menu
+    {
+        margin:0px 10px 10px;
+        padding:0px 5px 5px 5px;
+        border:2px solid #ffffff;
+        border-top:0px;
+        background:#a1effb;
+    }
+    #menu ul
+    {
+        margin:0;
+        padding:0;
+        border:midium none;
+        list-style-type:none;        
+    }
+    #menu li
+    {
+        border-top:1px solid #fff; 
+        background:#08aeba;
+        font-size:14px;
+        font-weight:800;
+    }
+    #menu li a
+    {
+        display:block;
+        font-family:Times New Roman,ARIAL,Courier;
+        font-weight:blod;
+        padding:10px 0px 5px 31px;
+        width:110px;
+        color:#020202;	
+        background:url(images/dot.gif) transparent no-repeat 8px 14px;
+        text-decoration:none;
+    }
+    #menu li a:hover
+    {
+        background:#0d5472;
+    }
+    .current
+    {
+        padding:7px 10px;
+        background:#0d5472;
+        text-align:right;
+        color:white;
+        
+    }
