@@ -1,0 +1,59 @@
+#sidebar {
+	width:266px;
+	height:850px;
+	background:#fff;
+	float:left;
+	border-right:1px solid #ccc;
+}
+#sidebar embed {
+	display:block;
+	width:220px;
+	height:200px;
+	margin:0 auto;
+	margin-top:20px;
+}
+#content {
+	width:600px;
+	height:850px;
+	background:#fff;
+	float:right;
+}
+#content h1 {
+	background:url(../images/Message.gif) no-repeat;
+	width:119px;
+	height:26px;
+	font-size:100%;
+	text-indent:-9999px;
+	margin-top:20px;
+	margin-left:20px;
+}
+#content form {
+	margin-left:20px;
+	margin-top:10px;
+}
+#content form p {
+	padding:2px 0 2px 0;
+}
+#content form p input.text {
+	width:150px;
+	height:20px;
+	border:1px solid #ccc;
+	background:#fff;
+}
+#content form textarea.area {
+	width:210px;
+	height:100px;
+	background:#fff;
+	border:1px solid #ccc;
+}
+#content form p input.submit {
+	width:70px;
+	height:25px;
+	background:#fff;
+	border:1px solid #ccc;
+	cursor:pointer;
+	color:#666;
+}
+#content form p input.submit:hover {
+	background:#eee;
+}

@@ -1,0 +1,40 @@
+#contents {
+	height:371px;
+	background:#fff url(../images/intro.jpg) no-repeat left bottom;
+}
+#contents ul {
+	background:#fff url(../images/tel.gif) no-repeat 91% 35%;
+	color:green;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}
+#contents ul li {
+	display:inline;
+}
+#contents ul li a {
+	text-decoration:none;
+	color:green;
+}
+#contents ul li a:hover {
+	color:#f60;
+}
+#contents img {
+	display:block;
+	margin-left:135px;
+}
+#contents h1 {
+	font-size:16px;
+	width:450px;
+	margin-left:300px;
+	text-align:center;
+	height:35px;
+	line-height:35px;
+}
+#contents p {
+	color:#666;
+	width:450px;
+	margin-left:300px;
+	line-height:180%;
+	text-indent:28px;
+}

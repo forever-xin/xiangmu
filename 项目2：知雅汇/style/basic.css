@@ -1,0 +1,38 @@
+* {
+	 margin:0;
+	 padding:0;
+}
+body {
+	background:#cfedcd;
+	font-size:12px;
+}
+ul {
+	list-style-type:none;
+}
+div#sidebar,div#header,div#contents,div#footer {
+	width:778px;
+	margin:0 auto;
+}
+#sidebar {
+	background:#399c00;
+}
+#sidebar embed {
+	width:778px;
+	height:51px;
+	margin-top:10px;
+}
+#header {
+	height:153px;
+	background:url(../images/banner.jpg) no-repeat left top;
+}
+#header embed {
+	width:778px;
+	height:153px;
+}
+#footer {
+	height:30px;
+	line-height:30px;
+	background:#399c00;
+	color:#fff;
+	text-align:center;
+}

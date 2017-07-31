@@ -1,0 +1,13 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background:#cfedcd;
+}
+embed {
+	margin:30px auto;
+	width:820px;
+	height:560px;
+	display:block;
+}

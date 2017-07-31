@@ -1,0 +1,317 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background:#fff;
+	width:760px;
+	margin:0 auto;
+	font-size:12px;
+}
+img {
+	border:none;
+}
+ul {
+	list-style-type:none;
+}
+#header {
+	width:760px;
+	height:190px;
+}
+#nav {
+	width:760px;
+	height:40px;
+	margin-bottom:10px;
+}
+#banner {
+	width:760px;
+	height:60px;
+	margin-bottom:10px;
+}
+#act {
+	width:250px;
+	height:226px;
+	background:url(../images/jmd_bottom.jpg) no-repeat left bottom;
+	float:left;
+	margin-bottom:10px;
+}
+#act h1 {
+	width:250px;
+	height:32px;
+	line-height:32px;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	background:url(../images/jmd_top.jpg) no-repeat left center;
+}
+#act div {
+	width:250px;
+	height:188px;
+	background:url(../images/jmd_bg.jpg);
+}
+#act div ul {
+	width:240px;
+	height:188px;
+	margin:0 auto;
+	overflow:auto;
+	color:#fff;
+	text-indent:45px;
+	line-height:150%;
+	letter-spacing:1px;
+	scrollbar-face-color: #333; 
+	scrollbar-highlight-color: #666; 
+	scrollbar-shadow-color: #333; 
+	scrollbar-3dlight-color: #999; 
+	scrollbar-arrow-color: #999; 
+	scrollbar-track-color: #000; 
+}
+#act div ul li span {
+	color:lightgreen;
+}
+#ad {
+	width:250px;
+	height:100px;
+	float:left;
+	margin-bottom:10px;
+}
+#video {
+	width:500px;
+	height:336px;
+	background:url(../images/flv_bottom.jpg) no-repeat left bottom;
+	float:right;
+	margin-bottom:10px;
+}
+#video h1 {
+	width:500px;
+	height:31px;
+	line-height:31px;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	background:url(../images/flv_top.jpg) no-repeat left center;
+}
+#video div {
+	width:auto;
+	height:289px;
+	background:url(../images/flv_bg.jpg);
+	padding-left:40px;
+	padding-top:10px
+}
+#video div span {
+	width:320px;
+	height:260px;
+	display:block;
+	float:left;
+}
+#video div ul {
+	padding-left:15px;
+	width:75px;
+	height:260px;
+	float:left;
+}
+#video div ul li img {
+	width:75px;
+	height:55px;
+	display:block;
+	padding-bottom:3px;
+	padding-top:3px;
+}
+#video div strong {
+	height:20px;
+	line-height:20px;
+	display:block;
+	clear:both;
+	text-indent:20px;
+	font-weight:normal;
+	color:#999;
+}
+#top {
+	width:250px;
+	height:340px;
+	float:left;
+	margin-bottom:10px;
+	background:url(../images/jmd_bottom.jpg) no-repeat left bottom;
+}
+#top h1 {
+	width:250px;
+	height:32px;
+	line-height:32px;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	background:url(../images/jmd_top.jpg) no-repeat left center;
+}
+#top div#ta {
+	width:250px;
+	height:302px;
+	background:url(../images/jmd_bg.jpg);
+}
+#top div#ta ul#sidebar {
+	height:20px;
+	line-height:20px;
+	width:215px;
+	margin:0 auto;
+	border-bottom:1px solid #5b5b5b;
+	padding-top:5px;
+}
+#top div#ta ul#sidebar li {
+	cursor:pointer;
+}
+#top div#ta ul#sidebar li.TabbedPanelsTab {
+	float:left;
+	width:60px;
+	height:20px;
+	background:url(../images/libg1.gif) no-repeat;
+	margin-left:5px;
+	text-align:center;
+	color:#666;
+}
+#top div#ta ul#sidebar li.TabbedPanelsTabSelected {
+	background:url(../images/libg.gif) no-repeat;
+	color:#eee;
+}
+#top div#ta #content div ul.music {
+	line-height:210%;
+	margin-top:10px;
+	margin-left:25px;
+	color:#fff;
+	background:url(../images/music.gif) repeat-y 93%;
+}
+#top div#ta #content div ul.music li {
+	padding-left:25px;
+}
+#top div#ta #content div ul.music li.one {
+	background:url(../images/1.gif) no-repeat left 38%;
+}
+#top div#ta #content div ul.music li.two {
+	background:url(../images/2.gif) no-repeat left 38%;
+}
+#top div#ta #content div ul.music li.three {
+	background:url(../images/3.gif) no-repeat left 38%;
+}
+#top div#ta #content div ul.music li.four {
+	background:url(../images/4.gif) no-repeat left 38%;
+}
+#top div#ta #content div ul.music li.five {
+	background:url(../images/5.gif) no-repeat left 38%;
+}
+#top div#ta #content div ul.music li.six {
+	background:url(../images/6.gif) no-repeat left 38%;
+}
+#top div#ta #content div ul.music li.seven {
+	background:url(../images/7.gif) no-repeat left 38%;
+}
+#top div#ta #content div ul.music li.eight {
+	background:url(../images/8.gif) no-repeat left 38%;
+}
+#top div#ta #content div ul.music li.nine {
+	background:url(../images/9.gif) no-repeat left 38%;
+}
+#top div#ta #content div ul.music li.ten {
+	background:url(../images/10.gif) no-repeat left 38%;
+}
+#commend {
+	width:500px;
+	height:119px;
+	background:url(../images/flv_bottom.jpg) no-repeat left bottom;
+	float:right;
+	margin-bottom:10px;
+}
+#commend h1 {
+	width:500px;
+	height:31px;
+	line-height:31px;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	background:url(../images/flv_top.jpg) no-repeat left center;
+}
+#commend div {
+	width:auto;
+	height:82px;
+	background:url(../images/flv_bg.jpg);
+	padding-left:18px;
+}
+#commend div img {
+	display:block;
+	float:left;
+	padding-top:12px;
+	padding-left:10px;
+}
+#compere {
+	width:500px;
+	height:140px;
+	background:url(../images/flv_bottom.jpg) no-repeat left bottom;
+	float:right;
+	margin-bottom:10px;
+}
+#compere h1 {
+	width:500px;
+	height:31px;
+	line-height:31px;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	background:url(../images/flv_top.jpg) no-repeat left center;
+}
+#compere div {
+	width:auto;
+	height:103px;
+	background:url(../images/flv_bg.jpg);
+	padding-left:40px;
+}
+#compere div dl {
+	width:210px;
+	height:90px;
+	float:left;
+	padding-top:10px;
+}
+#compere div dl dt {
+	width:82px;
+	height:82px;
+	float:left;
+}
+#compere div dl dt img {
+	width:82px;
+	height:82px;
+	display:block;
+}
+#compere div dl dd {
+	color:#eee;
+	text-indent:5px;
+}
+#partner {
+	width:500px;
+	height:60px;
+	float:right;
+	margin-bottom:10px;
+	background:yellow;
+}
+#footer {
+	clear:both;
+	width:760px;
+	height:120px;
+	background:url(../images/footer.gif) no-repeat left center;
+}
+#footer ul {
+	text-align:center;
+	color:#999;
+	clear:both;
+	height:30px;
+	line-height:30px;
+	padding-top:5px;
+}
+#footer ul li {
+	display:inline;
+}
+#footer ul li a {
+	color:#999;
+	text-decoration:none;
+}
+#footer ul li a:hover {
+	text-decoration:underline;
+}
+#footer p {
+	text-align:center;
+	color:#666;
+}
