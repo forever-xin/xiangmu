@@ -1,0 +1,33 @@
+table {
+    margin: auto;
+    width: 60%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top:20%;
+    left: 21%;
+}
+
+table caption {
+    color: grey;
+    font: 34px consolas bold;
+    padding-bottom: 50px;
+}
+
+table th, table td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table th {
+    font: 20px consolas bold;
+    background-color: #f0f0f0;
+}
+
+table tr:nth-child(n+2) {
+    background-color: #f0f0f0;
+}
+
+table tr:nth-child(2n+2) {
+    background-color: #8c8c8c;
+}

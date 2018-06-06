@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Admin index Examples</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="/stylesheets/amazeui.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/order_list.css">
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/polyfill/rem.min.js"></script>
+    <script src="/javascripts/polyfill/respond.min.js"></script>
+    <script src="/javascripts/amazeui.legacy.js"></script>
+    <script src="/javascripts/amazeui.min.js"></script>
+    <style>
+        body{
+            background-color: #BABABA;
+        }
+    </style>
+</head>
+<body>
+<div class="am-container"
+     style="border-radius: 8px;margin-top: 30px;height: 1000px;">
+    <h1 style="margin-left: 43%;color: gray;font-size: 34px;"> 商品列表 </h1>
+    <div class="admin-biaogelist">
+        <div class="listbiaoti am-cf">
+            <dl class="am-icon-home" style="float: right;"> 当前位置： <a href="home_page.html">首页 ></a> 商品列表</dl>
+        </div>
+    </div>
+</div>
+<script>
+    $.getJSON('/cloth_list', function (data, result) {
+        var Order = function (number, items,price, describe) {
+            this.number = number;
+            this.items = items;
+            this.price = price;
+            this.describe = describe;
+        }
+
+        console.log(data);
+        var order = [];
+        for (var i = 0; i < data.length; i++) {
+            var d = data[i];
+            console.log(d["describe"])
+            order.push(new Order(d["number"], d["items"], d["price"],d["describe"]));
+        }
+
+        console.log(order[0].describe)
+        console.log(order[0].price)
+
+        console.log(order[0].describe)
+        console.log(order[0].price)
+
+        console.log(order[0].describe)
+        console.log(order[0].price)
+
+        console.log(order[0].describe)
+        console.log(order[0].price)
+
+        onload = function () {
+            var table = document.createElement("table");
+            table.position = "absolute";
+            table.top = "-100px";
+            var tbody = document.createElement("tbody");
+            table.appendChild(tbody);
+            var tr = tbody.insertRow(0);
+            var str = "商品编号,商品名称,商品单价,商品描述".split(",");
+            console.log(str.length)
+            for (var i = 0; i < str.length; i++) {
+                var th = document.createElement("th");
+                th.innerHTML = str[i];
+                tr.appendChild(th);
+            }
+            console.log(order[0].describe)
+            console.log(order[0].price)
+
+            console.log(order[0].describe)
+            console.log(order[0].price)
+
+            console.log(order[0].describe)
+            console.log(order[0].price)
+
+            console.log(order[0].describe)
+            console.log(order[0].price)
+
+            for (var i = 0; i < order.length; i++) {
+                var tr = tbody.insertRow(tbody.rows.length);
+                var obj = order[i];
+                for (var p in obj) {
+                    var op = obj[p];
+                    var td = tr.insertCell(tr.cells.length);
+                    td.innerHTML = op;
+                }
+            }
+            document.body.appendChild(table);
+        }
+
+    });
+
+
+</script>
+</body>
+</html>

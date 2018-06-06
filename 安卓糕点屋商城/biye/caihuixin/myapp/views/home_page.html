@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/stylesheets/amazeui.min.css">
+    <link rel="stylesheet" href="/stylesheets/petshow.css">
+    <link rel="stylesheet" href="/stylesheets/animate.min.css">
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/amazeui.min.js"></script>
+    <script src="/javascripts/countUp.min.js"></script>
+    <script src="/javascripts/amazeui.lazyload.min.js"></script>
+    <style>
+        .image {
+            position: absolute;
+            top:350px;
+            left:240px;
+        }
+    </style>
+</head>
+<body >
+<header class="am-topbar am-topbar-inverse">
+    <div class="amz-container">
+        <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse-5">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+                <li class="am-active">
+                    <a href="#">
+                        首页
+                    </a>
+                </li>
+                <li class="am-dropdown" data-am-dropdown="">
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle="" href="javascript:;">
+                        商品信息
+                        <span class="am-icon-caret-down">
+                        </span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li>
+                            <a href="add_cloth.html">
+                                添加商品
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cloth_list.html">
+                                商品列表
+                            </a>
+                        </li>
+                        <li>
+                            <a href="update_cloth_list.html">
+                                修改商品信息
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="order_list.html">
+                        订单列表
+                    </a>
+                </li>
+                
+            
+        </div>
+    </div>
+</header>
+<div class="banner">
+        <div class="container">
+            <div class="banner-info">
+                <h1 class="animated fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="300ms">Sed ut perspiciatis unde omnis iste natus.<span>Excepteur sint occaecat cupidatat non proident</span></h1>
+                <div class="banner-info1 animated wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <ul id="flexiselDemo1">         
+                        <li>
+                            <div class="banner-info1-grid">
+                                <img src="images/1.png" alt=" " class="img-responsive" />
+                                <h3>denouncing pleasure</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-info1-grid">
+                                <img src="images/2.png" alt=" " class="img-responsive" />
+                                <h3>denouncing pleasure</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-info1-grid">
+                                <img src="images/3.png" alt=" " class="img-responsive" />
+                                <h3>denouncing pleasure</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </li>
+                    </ul>
+                        <script type="text/javascript">
+                            $(window).load(function() {
+                                $("#flexiselDemo1").flexisel({
+                                    visibleItems: 3,
+                                    animationSpeed: 1000,
+                                    autoPlay: true,
+                                    autoPlaySpeed: 3000,            
+                                    pauseOnHover: true,
+                                    enableResponsiveBreakpoints: true,
+                                    responsiveBreakpoints: { 
+                                        portrait: { 
+                                            changePoint:480,
+                                            visibleItems: 1
+                                        }, 
+                                        landscape: { 
+                                            changePoint:640,
+                                            visibleItems:2
+                                        },
+                                        tablet: { 
+                                            changePoint:768,
+                                            visibleItems: 2
+                                        }
+                                    }
+                                });
+                                
+                            });
+                    </script>
+                    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+
+
+
+
+
+</body>
+</html>

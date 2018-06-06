@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/ac_search_back"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="15dp"
+            android:background="@color/bg_red"
+            android:src="@mipmap/bg_back"/>
+
+        <EditText
+            android:id="@+id/ac_search_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:hint="请输入搜索内容"
+            android:background="@color/bg_red"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/ac_search_search"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="15dp"
+            android:background="@color/bg_red"
+            android:src="@drawable/search"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf"
+        />
+
+    <TextView
+        android:id="@+id/search_result_null"
+        android:text="对不起，没有找到您想要的物品~"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <GridView
+        android:id="@+id/ac_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        />
+
+</LinearLayout>

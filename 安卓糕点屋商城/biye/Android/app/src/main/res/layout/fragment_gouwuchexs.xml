@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:background="@color/bg_white">
+
+    <ImageView
+        android:id="@+id/fr_laundry_frame"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+         android:background="@color/bg_white"
+        android:src="@mipmap/fragment_laundry_frame" />
+
+    <ImageView
+        android:id="@+id/fr_laundry_clothes"
+        android:layout_width="100dp"
+        android:layout_height="99dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/fragment_clothes1" />
+    <TextView
+        android:id="@+id/fr_laundry_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蛋糕"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf ="@id/fr_laundry_frame"/>
+    <ImageView
+        android:id="@+id/fr_laundry_cuts"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf ="@id/fr_laundry_clothes"
+        android:layout_marginLeft="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fragment_laundry_cuts"
+        android:src="@drawable/fragment_laundry_cuts_normal"/>
+    <TextView
+        android:id="@+id/fr_laundry_num"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf ="@id/fr_laundry_cuts"
+        android:background="@drawable/fragment_laundry_num"
+        android:text="1"
+        android:gravity="center"
+        />
+    <ImageView
+        android:id="@+id/fr_laundry_plus"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fragment_laundry_plus"
+        android:layout_toRightOf ="@id/fr_laundry_num"
+        android:src="@drawable/fragment_laundry_plus_normal"/>
+    <TextView
+        android:id="@+id/fr_laundry_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="×"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf ="@id/fr_laundry_plus"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/fr_laundry_amounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥14"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf ="@id/fr_laundry_text2"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/bg_clothes_orange"/>
+    <ImageView
+        android:id="@+id/fr_laundry_remove"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/fragment_laundry_canceled"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>

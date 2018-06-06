@@ -1,0 +1,32 @@
+.exit {
+    position: absolute;
+    bottom: 100px;
+    left: 46%;
+}
+
+.exit form input[type="button"] {
+    background: #00B7FF;
+    border-radius: 30px;
+    border: 1px solid #f0f0f0;
+    color: #f0f0f0;
+    cursor: pointer;
+    font: bold 15px Helvetica, Arial, sans-serif;
+    height: 35px;
+    margin: 20px 0 35px 15px;
+    position: relative;
+    width: 100%;
+}
+
+.exit form input[type="button"]:hover {
+    background: #0b6fa2;
+}
+
+.info_our {
+    text-align: center;
+    margin-top: 180px;
+}
+
+a {
+    text-decoration: none;
+    color: #00B7FF;
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/bg_grey">
+
+        <ImageView
+            android:id="@+id/fragment_laundry_roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@mipmap/fragment_laundry_roll"
+            />
+
+        <TextView
+            android:id="@+id/fragment_laundry_combined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="60dp"
+            android:text="合计："
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/fragment_laundry_combinednum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:text="￥88"
+            android:textColor="@color/bg_clothes_orange"
+            android:textSize="26sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/fragment_laundry_fees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="合计:"
+            android:textColor="#303235"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/fragment_laundry_feesnum"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="100dp"
+
+            android:layout_centerVertical="true"
+            android:text="￥88"
+            android:textColor="@color/bg_red"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/fragment_laundry_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="#ed3f3f"
+            android:text="结算"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/fragment_laundry_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:text="用户信息"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/fragment_laundry_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/bg_right"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

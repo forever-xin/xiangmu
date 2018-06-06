@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Admin index Examples</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="/stylesheets/amazeui.min.css"/>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/polyfill/rem.min.js"></script>
+    <script src="/javascripts/polyfill/respond.min.js"></script>
+    <script src="/javascripts/amazeui.legacy.js"></script>
+    <script src="/javascripts/amazeui.min.js"></script>
+
+</head>
+<body>
+<div class="am-container"
+     style="border: 10px solid gainsboro;border-radius: 8px;margin-top: 30px;background-color: gainsboro">
+    <h1 style="margin-left: 40%;color: gray;font-size: 34px;">修改商品信息</h1>
+    <div class="admin-biaogelist">
+        <div class="listbiaoti am-cf">
+            <dl class="am-icon-home" style="float: right;"> 当前位置： <a href="home_page.html">首页 ></a> 修改商品信息</dl>
+        </div>
+
+        <div class="fbneirong">
+            <form class="am-form">
+                <div class="am-form-group am-cf">
+                    <div class="zuo">所需修改的商品编号：</div>
+                    <div class="you">
+                        <input type="text" class="am-input-sm" id="number" placeholder="请输入商品编号">
+                    </div>
+                </div>
+                <div class="am-form-group am-cf">
+                    <div class="zuo">商品类型：</div>
+                    <div class="you">
+                        <input type="text" class="am-input-sm" id="type" placeholder="请输入商品类型">
+                    </div>
+                </div>
+                <div class="am-form-group am-cf">
+                    <div class="zuo">商品名称：</div>
+                    <div class="you">
+                        <input type="text" class="am-input-sm" id="items" placeholder="请输入商品名称">
+                    </div>
+                </div>
+                <div class="am-form-group am-cf">
+                    <div class="zuo">价格：</div>
+                    <div class="you">
+                        <input type="text" class="am-input-sm" id="price" placeholder="请输入价格">
+                    </div>
+                </div>
+                <!--<div class="am-form-group am-cf">-->
+                    <!--<div class="zuo">商品颜色：</div>-->
+                    <!--<div class="you">-->
+                        <!--<input type="text" class="am-input-sm" id="color" placeholder="请输入商品颜色">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="am-form-group am-cf">
+                    <div class="zuo">商品描述：</div>
+                    <div class="you">
+                        <input type="text" class="am-input-sm" id="describe" placeholder="请输入三种商品信息，两个字，以空格分离">
+                    </div>
+                </div>
+                <div class="am-form-group am-cf">
+                    <div class="zuo">商品图片：</div>
+                    <div class="you" style="height: 45px;">
+                        <input type="text" class="am-input-sm" id="picture" placeholder="请输入 /images/***.jpg">
+                    </div>
+                </div>
+                <div class="am-form-group am-cf">
+                    <div class="zuo">下架商品编号：</div>
+                    <div class="you">
+                        <input type="text" class="am-input-sm" id="down_number" placeholder="若无下架">
+                    </div>
+                </div>
+                <div class="am-form-group am-cf">
+                    <div class="you" style="margin-left: 45%;">
+                        <button type="submit" class="am-btn am-btn-secondary am-radius" onclick="submit2()">更新发布
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function submit2(err) {
+        var number = document.getElementById("number").value;
+        var type = document.getElementById("type").value;
+        var items = document.getElementById("items").value;
+        var price = document.getElementById("price").value;
+//        var color = document.getElementById("color").value;
+        var describe = document.getElementById("describe").value;
+        var picture = document.getElementById("picture").value;
+        var down_number = document.getElementById("down_number").value;
+        $.getJSON('/update_cloth_list',
+                {
+                    number: number,
+                    type: type,
+                    items: items,
+                    price: price,
+//                    color: color,
+                    describe: describe,
+                    picture: picture,
+                    down_number: down_number
+                }, function (result) {
+                });
+        if (err) {
+            console.log(err);
+        }else {
+            console.log("修改成功");
+            alert("商品信息修改成功");
+        }
+    }
+</script>
+</body>
+</html>

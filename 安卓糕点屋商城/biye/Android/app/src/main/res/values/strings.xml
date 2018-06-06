@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TechnologyShopping</string>
+    <string-array name="fr_me_grid">
+        <item>我的订单</item>
+
+        <item>我的地址</item>
+
+        <item>退出登录</item>
+    </string-array>
+</resources>
