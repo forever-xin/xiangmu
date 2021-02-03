@@ -1,8 +1,8 @@
 ﻿var XMLHttp;
 function blogindex(i)
 {
-    var id = "#index"+i;   
-    $(id).animate({height:'toggle',opacity:'toggle'},500);    
+    var id = "#index"+i;
+    $(id).animate({height:'toggle',opacity:'toggle'},500);
 }
 function changecolor(i)
 {
@@ -25,7 +25,7 @@ function createXMLHTTP()
 				XMLHttp=new ActiveXObject("Microsoft.XMLHTTP");
 				}catch(e){}
 		}
-	}				
+	}
 }
 function bloglogin()
 {
@@ -33,15 +33,15 @@ function bloglogin()
     var pwd = document.getElementById("pwd").value;
     if(uid.length>18||uid.length<5)
     {
-        alert("请输入的帐号长度不对"); 
-        return false;       
+        alert("请输入的帐号长度不对");
+        return false;
     }
     if(pwd.length>20||pwd.length<6)
     {
         alert("您的密码长度不对!");
         return false;
     }
-    createXMLHTTP();   
+    createXMLHTTP();
     var url = "mylogin.aspx?uid="+uid+"&pwd="+pwd;
     XMLHttp.open("GET",url,true);
     XMLHttp.onreadystatechange = function ()
@@ -49,7 +49,7 @@ function bloglogin()
         if(XMLHttp.readyState ==4)
         {
             if(XMLHttp.status ==200)
-            {              
+            {
                 var i = XMLHttp.responseText;
                 switch(i)
                 {
@@ -75,8 +75,8 @@ function bloglogin()
             document.getElementById("loginNote").innerHTML ="正在登陆.....";
         }
     }
-    XMLHttp.send(null);   
-   
+    XMLHttp.send(null);
+
 }
 function logined()
 {
@@ -96,10 +96,11 @@ function logout()
         if(XMLHttp.readyState ==4)
             {
                 if(XMLHttp.status ==200)
-                { 
+                {
                     alert("leining");
                 }
             }
     }
     XMLHttp.send(null);
+
 }
