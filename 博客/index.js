@@ -103,4 +103,6 @@ function logout()
     }
     XMLHttp.send(null);
 
+
+
 }
